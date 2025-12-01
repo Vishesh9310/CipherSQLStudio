@@ -1,0 +1,17 @@
+$primary: #1e1e1e;
+$accent: #4bcffa;
+$text: #fff;
+
+body {
+  margin: 0;
+  background: $primary;
+  font-family: 'Inter', sans-serif;
+  color: $text;
+  list-style: none;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+}

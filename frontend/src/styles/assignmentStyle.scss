@@ -1,0 +1,68 @@
+/* Container */
+.assignment-box {
+    margin: 10%;
+}
+
+/* Header row */
+.list-header-style {
+    display: flex;
+    justify-content: space-between;
+    background: rgb(68, 67, 67);
+    padding: 10px;
+    border-radius: 5px;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: white;
+
+    .list-item {
+        flex: 1;
+        /* equal column width */
+        text-align: left;
+    }
+
+    @media (max-width: 639px) {
+        flex-direction: column;
+
+        .list-item {
+            margin-bottom: 5px;
+        }
+    }
+}
+
+/* List items */
+.list-item-style {
+    text-decoration: none;
+    display: flex;
+    justify-content: space-between;
+    background: rgb(68, 67, 67);
+    color: white;
+    padding: 10px;
+    margin-bottom: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+
+    &:hover {
+        background: white;
+        color: black;
+        transform: scale(1.01);
+    }
+
+    .list-item {
+        flex: 1;
+        /* equal column width */
+        text-align: left;
+    }
+
+    .difficulty {
+        color: #4bcffa;
+    }
+
+    @media (max-width: 639px) {
+        flex-direction: column;
+
+        .list-item {
+            margin-bottom: 5px;
+        }
+    }
+}
